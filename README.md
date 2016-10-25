@@ -4,11 +4,12 @@ This plugin teaches Redmine to use ActiveRecord as session store. Session data i
 
 ## Compatibilty
 
-Tested with Redmine 2.2.3, but should be working fine with Redmine 2.x and possibly 1.x.
+Tested with Redmine 3.3.1 but should be working fine with Redmine 2.x and possibly 1.x.
 
 ## Installation
 
 1. Download or clone this repository and place it in the Redmine plugin directory
+2. Run the bundle installations (`bundle install --without development test`)
 2. Run the plugin migrations (`rake redmine:plugins:migrate RAILS_ENV=production`)
 3. Restart your webserver
 4. Open Redmine and check if the plugin is visible under Administration > Plugins
